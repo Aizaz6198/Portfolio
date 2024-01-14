@@ -8,7 +8,7 @@ const port = 3000;
 
 // Middleware for parsing form data
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'Public')));
 
 // Serve your HTML form
 app.get('/', (req, res) => {
